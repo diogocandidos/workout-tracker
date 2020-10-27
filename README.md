@@ -1,7 +1,5 @@
 # Workout Tracker
 
-
-
 ## Directons
 ![License Badge](https://img.shields.io/static/v1?label=License&message=MIT_License&color=blue)
 
@@ -21,7 +19,20 @@ The user should be able to:
 
 ## Demo
 
+* Click in the link bellow to access the application.
+
+****** [Heroku link]() ******
+
 ##### ADD pictures here
+
+## Built With
+* HTML
+* CSS
+* Bootstrap
+* Javascript
+* Node.js
+* Express
+* MongoDB
 
 ## Licence
 
@@ -48,5 +59,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## GitHub
-- [User name]Diogo Candido da Silva
+- Author: Diogo Candido da Silva
 - [GitHub Profile](https://github.com/diogocandidos)
