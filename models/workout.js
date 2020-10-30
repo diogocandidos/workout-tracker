@@ -7,7 +7,8 @@ const workoutSchema = new Schema(
         type: Date,
         default: Date.now
       },
-      exercises: [{
+      exercises: [
+        {
             type: {
                 type: String,
                 trim: true
@@ -41,8 +42,8 @@ const workoutSchema = new Schema(
     }
   );
   
-  workoutSchema.virtual("totalDuration").get(() => {
-    return this.exercises.reduce((total, exercise) => {
+  workoutSchema.virtual("totalDuration").get(function () {
+      return this.exercises.reduce((total, exercise) => {
       return total + exercise.duration;
     }, 0);
   });

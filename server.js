@@ -11,12 +11,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
+mongoose.connect(MONGODB_URI,
+  {  
+    useNewUrlParser:true,
+    useFindAndModify:false
+})
 
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-//Listen on port 3000
+
 app.listen(8080, function() {
     console.log('listening on 8080');
   });
