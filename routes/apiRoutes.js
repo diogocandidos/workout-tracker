@@ -13,7 +13,7 @@ module.exports = (app) => {
     app.post("/api/workouts", (req, res) => {    
         db.Workout.create({})
         .then(data => {res.json(data)})
-        .catch(err => {res.status(404).json(err)});
+        .catch(err => {res.status(400).json(err)});
     });
 
     app.get("/api/workouts/range", (req, res) => {  
