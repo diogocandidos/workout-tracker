@@ -21,7 +21,7 @@ The user should be able to:
 
 * Click in the link bellow to access the application.
 
-****** [Heroku link](https://workout-tracker-homework17.herokuapp.com/) ******
+****** [Heroku link](https://damp-lowlands-30489.herokuapp.com/) ******
 
 1. Homepage displaying last workout
 
