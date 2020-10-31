@@ -24,7 +24,8 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 
-app.listen(8080, function() {
+app.listen( PORT, function() {
     console.log('listening on 8080');
   });
 
+  
